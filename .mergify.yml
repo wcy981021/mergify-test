@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: merge on label
+    conditions:
+      - "label=mergify-merge"
+    actions:
+      merge:
+        method: squash
