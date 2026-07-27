@@ -1,5 +1,4 @@
 queue_rules:
   - name: default
     merge_conditions:
-      - check-success=slow-ci
-      - label=queue-ok
+      - label=keep
