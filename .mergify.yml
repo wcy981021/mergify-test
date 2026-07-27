@@ -1,6 +1,4 @@
+extends: mergifyio/mergify
 queue_rules:
   - name: default
-    merge_conditions:
-      - label=go
-    batch_size: 5
-    batch_max_wait_time: 2 minutes
+    merge_conditions: []
