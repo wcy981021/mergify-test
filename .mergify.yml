@@ -1,12 +1,5 @@
 queue_rules:
   - name: default
-    merge_conditions: []
-    merge_method: squash
-    commit_message_template: |
-      RENDER_MARKER_START
-      title=[{{ title }}]
-      body=[{{ body }}]
-      author=[{{ author }}]
-      head=[{{ head }}]
-      number=[{{ number }}]
-      RENDER_MARKER_END
+    merge_conditions:
+      - check-success=slow-ci
+      - label=queue-ok
